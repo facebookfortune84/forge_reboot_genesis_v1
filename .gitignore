@@ -1,0 +1,66 @@
+# ─── Secrets ─────────────────────────────────────────────
+.env
+secrets.toml
+memory/long_term/user_preferences/preferences.md
+
+# ─── System Files ───────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── IDEs ───────────────────────────────────────────────
+.vscode/
+.idea/
+
+# ─── Build Artifacts ────────────────────────────────────
+dist/
+build/
+*.whl
+
+# ─── Environments ───────────────────────────────────────
+forge_env_clean/
+.venv/
+venv/
+env/
+forge_env/
+python-3.11.0-embed-amd64.zip
+
+# ─── Bootstrap & Patch ──────────────────────────────────
+bootstrap/
+scripts/__pycache__/
+forge_reboot_genesis_v1/scripts/__pycache__/
+import_patch_backup/
+patch_backup/
+forge_reboot_genesis_v1/import_patch_backup/
+forge_reboot_genesis_v1/patch_backup/
+
+# ─── Audit Logs & Plans ─────────────────────────────────
+*.json
+*.txt
+missing_files.log
+import_patchlog.txt
+patchlog.txt
+import_staging.json
+import_patchplan.json
+patchplan.json
+import_align_log.json
+import_audit_log.json
+
+# ─── Inner Package Noise ────────────────────────────────
+forge_reboot_genesis_v1/__init__.py
+forge_reboot_genesis_v1/README.md
+forge_reboot_genesis_v1/setup.py
+forge_reboot_genesis_v1/pyproject.toml
+forge_reboot_genesis_v1/uv.lock
+
+*.pyc
+__pycache__/
+logs/
+*.log
+*.sqlite3
+*.db
+*.bak
+*.tmp
+.DS_Store
+.vscode/
+.idea/
+node_modules/

@@ -1,0 +1,50 @@
+[project]
+name = "realmstoriches"
+version = "1.0.0"
+description = "Realms to Riches | Agentic Master Forge™ — Autonomous Cinematic AI Intelligence Framework"
+authors = [{ name = "Robert Demotto Jr", email = "robertdemottojr83@gmail.com" }]
+requires-python = ">=3.11"
+
+dependencies = [
+    "crewai[tools]>=0.203.0,<1.0.0",
+    "streamlit>=1.30.0",
+    "openai>=1.51.0",
+    "groq>=0.5.0",
+    "pyyaml>=6.0.1",
+    "pydantic>=2.8.2",
+    "requests>=2.32.0",
+    "colorama>=0.4.6",
+    "rich>=13.7.1",
+    "termcolor>=2.4.0",
+    "pyfiglet>=1.0.2",
+    "asciimatics>=1.15.0",
+    "tqdm>=4.66.3",
+    "pillow>=10.4.0",
+    "simpleaudio>=1.0.4",
+    "ffmpeg-python>=0.2.0",
+    "elevenlabs>=1.4.0",
+    "markdown2>=2.5.0",
+    "uv>=0.2.0",
+    "setuptools>=80.0.0",
+    "wheel>=0.45.0"
+]
+
+[project.scripts]
+forge_launch = "el_diablo:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.forge]
+assets_path = "assets/"
+voices_path = "assets/voices/"
+deliverables_path = "deliverables/"
+use_voice_assets = true
+use_visual_effects = true
+broadcast_system = true
+holographic_mode = true
+performance_overdrive = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/forge"]
